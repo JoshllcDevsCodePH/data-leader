@@ -6,6 +6,7 @@ const PrivacyControls = () => {
     <>
       <Script
         strategy="afterInteractive"
+        id="iubenda-config"
         dangerouslySetInnerHTML={{
           __html: `
             var _iub = _iub || [];
@@ -48,7 +49,6 @@ const PrivacyControls = () => {
       <Script
         strategy="afterInteractive"
         src="//cdn.iubenda.com/cs/iubenda_cs.js"
-        charset="UTF-8"
         async
       />
     </>
